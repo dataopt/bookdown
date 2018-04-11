@@ -131,7 +131,7 @@ $if(subtitle)$
 $endif$
 $for(author)$
 $if(author.name)$
-<h4 class="author"><em>$author.name$</em></h4>
+<p class="author"><em>$author.name$</em></p>
 $if(author.affiliation)$
 <address class="author_afil">
 $author.affiliation$<br>$endif$
@@ -140,11 +140,11 @@ $if(author.email)$
 </address>
 $endif$
 $else$
-<h4 class="author"><em>$author$</em></h4>
+<p class="author"><em>$author$</em></p>
 $endif$
 $endfor$
 $if(date)$
-<h4 class="date"><em>$date$</em></h4>
+<p class="date"><em>$date$</em></p>
 $endif$
 </div>
 $if(abstract)$
