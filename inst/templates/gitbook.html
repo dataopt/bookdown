@@ -134,13 +134,15 @@ $endif$
       </nav>
     </div>
 
+    
+    <!-- book-header shouldn't be in book-body. This fixes iPad disappearing toolbar issue.-->
+    <div class="book-header" role="navigation">
+      <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i><a href="$if(book-url)$$book-url$$else$./$endif$">$if(title)$$title$$endif$</a>
+      </h1>
+    </div>
     <div class="book-body">
       <div class="body-inner">
-        <div class="book-header" role="navigation">
-          <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="$if(book-url)$$book-url$$else$./$endif$">$if(title)$$title$$endif$</a>
-          </h1>
-        </div>
 
         <div class="page-wrapper" tabindex="-1" role="main">
           <div class="page-inner">
